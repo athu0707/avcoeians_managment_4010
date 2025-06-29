@@ -89,7 +89,8 @@
       formData.append('image', imageFile);
 
       try {
-        const res = await fetch(`http://localhost:3000/api/events/${eventId}/image`, {
+        await fetch(`https://avcoeians-backend-4010.onrender.com/api/events/${eventId}/image`, {
+
           method: 'POST',
           body: formData
         });

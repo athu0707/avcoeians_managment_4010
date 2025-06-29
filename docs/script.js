@@ -147,7 +147,8 @@ async function loadGalleryImages() {
   const container = document.getElementById("events-folder-view");
   if (!container) return;
 
-  const res = await fetch("http://localhost:3000/api/events");
+  const BASE_URL = 'https://avcoeians-backend-4010.onrender.com';
+
   const events = await res.json();
 
   container.innerHTML = "";
